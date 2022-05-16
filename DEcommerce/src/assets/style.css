@@ -201,7 +201,7 @@ table {
 /* Webclient */
 
 .webclient header {
-  background-color: #394868;
+  background-color: #684f39;
   margin-bottom: 5px;
 }
 
@@ -368,7 +368,7 @@ table {
 
 .webclient .title-border-left-right:before {
   content: "";
-  border-bottom: 1px solid #efce11;
+  border-bottom: 1px solid #3A3845;
   width: 75px;
   position: absolute;
   margin-left: -85px;
@@ -378,7 +378,7 @@ table {
 .webclient .title-border-left-right:after,
 .webclient .title-border-right:after {
   content: "";
-  border-bottom: 1px solid #efce11;
+  border-bottom: 1px solid #3A3845;
   width: 75px;
   position: absolute;
   margin-left: 10px;
@@ -401,7 +401,7 @@ table {
 }
 
 .webclient footer {
-  background: #394868;
+  background: #684f39;
   color: #e6e6e6;
   margin-top: 50px;
 }
@@ -418,7 +418,7 @@ table {
 
 .webclient .footer-bottom {
   padding: 12px 0 1px;
-  background: #2e3e5f;
+  background: #684f39;
 }
 
 .webclient .social i {
@@ -444,8 +444,8 @@ table {
   text-align: center;
 }
 .webclient .ant-btn-primary {
-  background-color: #d25a05 !important;
-  border-color: #d28105 !important;
+  background-color: #3A3845 !important;
+  border-color: #3A3845 !important;
 }
 
 /* product detail */
@@ -474,7 +474,7 @@ table {
 .webclient .product-detail-price-discount {
   font-weight: 500;
   font-size: 24px;
-  color: #f3990d;
+  color: #3A3845;
 }
 .webclient .product-detail-short-desc {
   margin-top: 10px;
@@ -484,14 +484,14 @@ table {
 }
 .webclient .product-detail-add-cart {
   display: inline-block;
-  border: 1px solid #f3990d;
+  border: 1px solid #C69B7B;
   font-size: 16px;
   margin-bottom: 5px;
   padding: 2px 14px 4px;
-  color: #f3990d;
+  color: #C69B7B;
 }
 .webclient .product-detail-add-cart:active {
-  color: #f3990d !important;
+  color: #C69B7B !important;
 }
 .webclient .product-detail-add-cart:hover {
   background: #e88f05;
@@ -503,7 +503,7 @@ table {
   padding: 2px 14px 4px;
   color: #ffffff !important;
   font-size: 16px;
-  background: #d25a05;
+  background: #C69B7B;
   margin-left: 10px;
 }
 

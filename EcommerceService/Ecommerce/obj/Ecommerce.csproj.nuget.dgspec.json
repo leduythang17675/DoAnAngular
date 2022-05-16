@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Thang\\Desktop\\DoAnAngular\\EcommerceService\\Ecommerce\\Ecommerce.csproj": {}
+    "C:\\Users\\Admin\\Desktop\\Angular_coffee\\EcommerceService\\Ecommerce\\Ecommerce.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Thang\\Desktop\\DoAnAngular\\EcommerceService\\Ecommerce\\Ecommerce.csproj": {
+    "C:\\Users\\Admin\\Desktop\\Angular_coffee\\EcommerceService\\Ecommerce\\Ecommerce.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Thang\\Desktop\\DoAnAngular\\EcommerceService\\Ecommerce\\Ecommerce.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\Angular_coffee\\EcommerceService\\Ecommerce\\Ecommerce.csproj",
         "projectName": "Ecommerce",
-        "projectPath": "C:\\Users\\Thang\\Desktop\\DoAnAngular\\EcommerceService\\Ecommerce\\Ecommerce.csproj",
-        "packagesPath": "C:\\Users\\Thang\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Thang\\Desktop\\DoAnAngular\\EcommerceService\\Ecommerce\\obj\\",
+        "projectPath": "C:\\Users\\Admin\\Desktop\\Angular_coffee\\EcommerceService\\Ecommerce\\Ecommerce.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Admin\\Desktop\\Angular_coffee\\EcommerceService\\Ecommerce\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Thang\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -75,7 +75,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     }

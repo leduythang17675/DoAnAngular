@@ -20,20 +20,20 @@
 .product-price-discount {
   font-weight: 500;
   font-size: 18px;
-  color: #f3990d;
+  color: #3A3845;
 }
 
 .product-add-cart > span {
   display: block;
-  border: 1px solid #f3990d;
+  border: 1px solid #3A3845;
   margin-top: 8px;
   margin-bottom: 5px;
   padding: 2px 0 4px;
-  color: #f3990d;
+  color: #3A3845;
 }
 
 .product-add-cart > span:hover {
-  background: #f3990d;
+  background: #3A3845;
   color: white;
 }
 
