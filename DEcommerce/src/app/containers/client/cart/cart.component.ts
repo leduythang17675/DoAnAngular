@@ -32,7 +32,7 @@ export class CartComponent implements OnInit {
 
   ngOnInit() {
     this.formData = this.formBuilder.group({
-      FullName: [{ value: '', disabled: true }, Validators.required],
+      FullName: [{ value: '', disabled: false }, Validators.required],
       PhoneNumber: [null, Validators.required],
       Address: [null, Validators.required],
       Note: [null]

@@ -28,10 +28,10 @@
                     <div class="product-detail-name">
                         <span>{{product.Name}}</span>
                     </div>
-                    <div class="product-detail-rate">
+                    <!-- <div class="product-detail-rate">
                         <nz-rate [ngModel]="product.RateAvg" nzDisabled></nz-rate>
                         <span>{{product.RateAvg}}</span>
-                    </div>
+                    </div> -->
                     <div>
                         <span class="product-detail-price">{{product.Price | number}} ₫</span>
                         <span class="product-detail-price-discount">{{product.DiscountPrice | number}} ₫</span>
@@ -103,12 +103,12 @@
             </div>
         </div>
     </div>
-    <div class="box-product-related">
+    <!-- <div class="box-product-related">
         <h3 class="title-border-right">SẢN PHẨM LIÊN QUAN</h3>
         <div nz-row>
-            <div nz-col nzSpan="4-8" *ngFor="let productRelated of product.ProductRelateds">
+            <div nz-col nzSpan="8" *ngFor="let productRelated of product.ProductRelateds">
                 <app-product-template [product]="productRelated.Product"></app-product-template>
             </div>
         </div>
-    </div>
+    </div> -->
 </div>

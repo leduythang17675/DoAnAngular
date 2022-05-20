@@ -10,16 +10,45 @@
                         <img src="{{website.Logo | hostImageClient}}" alt="">
                     </a>
                 </div>
-                <div>
-                    <nz-input-group [nzSuffix]="suffixTemplateInfo" class="input-search">
-                        <input (keyup.enter)="search()" [(ngModel)]="keySearch" type="text" nz-input
-                            placeholder="Tìm kiếm..." />
-                    </nz-input-group>
-                    <ng-template #suffixTemplateInfo>
-                        <i nz-icon nzType="search"></i>
-                    </ng-template>
+
+                <div class="header-menu">
+                    <div class="container">
+                        <ul nz-menu nzMode="horizontal" style="border: none !important;">
+                            <ng-container *ngFor="let menu of mainMenus" >
+                                <ng-container *ngIf="menu.SubMenus == null || menu.SubMenus.length == 0; else elseTemplateMenu">
+                                    <li nz-menu-item style="background-color: #684f39 !important;">
+                                        <a routerLink="/{{menu.Type=='bai-viet'?'danh-muc-bai-viet/':''}}{{menu.Alias}}"
+                                            rel="noopener noreferrer" style="color: white !important">
+                                            {{menu.Name}}
+                                        </a>
+                                    </li>
+                                </ng-container>
+                                <ng-template #elseTemplateMenu>
+                                    <li nz-submenu nzTitle="{{menu.Name}}">
+                                        <ul>
+                                            <li nz-menu-item *ngFor="let item of menu.SubMenus">
+                                                <a routerLink="/{{item.Alias}}">
+                                                    {{item.Name}}
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ng-template>
+                            </ng-container>
+                        </ul>
+                    </div>
                 </div>
+                
                 <div class="header-user">
+                    <div>
+                        <nz-input-group [nzSuffix]="suffixTemplateInfo" class="input-search" style="border-radius: 0 !important; width: 200px !important;">
+                            <input (keyup.enter)="search()" [(ngModel)]="keySearch" type="text" nz-input
+                                placeholder="Tìm kiếm..." />
+                        </nz-input-group>
+                        <ng-template #suffixTemplateInfo>
+                            <i nz-icon nzType="search"></i>
+                        </ng-template>
+                    </div>
                     <a routerLink="/gio-hang">
                         <nz-badge [nzCount]="getQtyItemInCart">
                             <i nz-icon nzType="shopping-cart" nzTheme="outline"></i>
@@ -31,33 +60,7 @@
                 </div>
             </div>
         </div>
-        <div class="header-menu">
-            <div class="container">
-                <ul nz-menu nzMode="horizontal">
-                    <ng-container *ngFor="let menu of mainMenus">
-                        <ng-container *ngIf="menu.SubMenus == null || menu.SubMenus.length == 0; else elseTemplateMenu">
-                            <li nz-menu-item>
-                                <a routerLink="/{{menu.Type=='bai-viet'?'danh-muc-bai-viet/':''}}{{menu.Alias}}"
-                                    rel="noopener noreferrer">
-                                    {{menu.Name}}
-                                </a>
-                            </li>
-                        </ng-container>
-                        <ng-template #elseTemplateMenu>
-                            <li nz-submenu nzTitle="{{menu.Name}}">
-                                <ul>
-                                    <li nz-menu-item *ngFor="let item of menu.SubMenus">
-                                        <a routerLink="/{{item.Alias}}">
-                                            {{item.Name}}
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ng-template>
-                    </ng-container>
-                </ul>
-            </div>
-        </div>
+        
     </header>
     <div>
         <router-outlet></router-outlet>
@@ -87,6 +90,12 @@
                         <p>Số điện thoại: {{website.PhoneNumber}}</p>
                     </div>
                     <div nz-col nzMd="6" nzXs="24" nzSpan="6">
+                        <h3>Thông tin liên hệ</h3>
+                        <p>Địa chỉ: {{website.Address}}</p>
+                        <p>Email: {{website.Email}}</p>
+                        <p>Số điện thoại: {{website.PhoneNumber}}</p>
+                    </div>
+                    <!-- <div nz-col nzMd="6" nzXs="24" nzSpan="6">
                         <h3>Đăng ký nhận tin</h3>
                         <div>
                             <form nz-form [formGroup]="formRegistration" (ngSubmit)="submitRegistration()">
@@ -115,15 +124,14 @@
                                 <i nz-icon nzType="mail" nzTheme="outline"></i>
                             </a>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
         <div class="footer-bottom">
             <div class="container">
-                <p>{{website.Copyright}}</p>
+                <p style="text-align: center;">{{website.Copyright}}</p>
             </div>
         </div>
     </footer>
-    <nz-back-top></nz-back-top>
 </div>

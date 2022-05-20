@@ -11,7 +11,7 @@
     </div>
     <div>
         <div nz-row class="mg-b">
-            <div nz-col nzLg="6" nzMd="10" nzSm="12" nzXs="24" nzSpan="6" class="mg-b">
+            <!-- <div nz-col nzLg="6" nzMd="10" nzSm="12" nzXs="24" nzSpan="6" class="mg-b">
                 <nz-form-item>
                     <nz-form-label>Sắp xếp theo</nz-form-label>
                     <nz-form-control>
@@ -22,8 +22,8 @@
                         </nz-select>
                     </nz-form-control>
                 </nz-form-item>
-            </div>
-            <div nz-col nzLg="6" nzMd="8" nzSm="12" nzXs="24" nzSpan="5">
+            </div> -->
+            <!-- <div nz-col nzLg="6" nzMd="8" nzSm="12" nzXs="24" nzSpan="5">
                 <nz-form-item>
                     <nz-form-label>Mức giá</nz-form-label>
                     <nz-form-control>
@@ -38,10 +38,10 @@
                         </nz-select>
                     </nz-form-control>
                 </nz-form-item>
-            </div>
+            </div> -->
         </div>
         <div nz-row>
-            <div nz-col nzSpan="4-8" *ngFor="let product of products">
+            <div nz-col nzSpan="8" *ngFor="let product of products">
                 <app-product-template [product]="product"></app-product-template>
             </div>
             <div nz-col nzSpan="24" class="filter-more">
